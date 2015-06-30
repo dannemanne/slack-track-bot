@@ -2,6 +2,10 @@ import slack.rtm.SlackRtmClient
 import akka.actor.ActorSystem
 
 import slack.api._
+import slack.models._
+
+import akka.util.{ByteString,Timeout}
+import scala.concurrent.duration._
 
 object SlackTrackBot {
 
