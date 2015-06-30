@@ -3,6 +3,7 @@ import akka.actor.ActorSystem
 
 import slack.api._
 import slack.models._
+import slack.rtm._
 
 import akka.util.{ByteString,Timeout}
 import scala.concurrent.duration._
