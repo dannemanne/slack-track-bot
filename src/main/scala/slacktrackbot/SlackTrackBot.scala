@@ -9,6 +9,7 @@ object SlackTrackBot {
     implicit val system = ActorSystem("slack")
 
     val token = sys.env("SLACK_TOKEN")
+    println("Got token: "+token)
     val client = SlackRtmClient(token)
 
     val state = client.state
